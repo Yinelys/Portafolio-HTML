@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de Todas las Etiquetas de Formato</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .ejemplo {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 4px solid #007acc;
+            border-radius: 5px;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #007acc;
+            padding-bottom: 5px;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎯 Ejemplos Prácticos de Etiquetas HTML de Formato</h1>
+
+    <!-- PRIORIDAD ALTA -->
+    <h2>🥇 Etiquetas de Prioridad Alta (Más Usadas)</h2>
+
+    <div class="ejemplo">
+        <h3>&lt;b&gt; - Negrita (solo estilo)</h3>
+        <p>Texto normal y <b>texto en negrita</b> para destacar visualmente.</p>
+    </div>
+
+    <div class="ejemplo">
+        <h3>&lt;strong&gt; - Importancia semántica</h3>
+        <p><strong>¡Precaución!</strong> No toques los cables expuestos.</p>
+    </div>
+
+    <div class="ejemplo">
+        <h3>&lt;em&gt; - Énfasis</h3>
+        <p>Realmente <em>necesito</em> que llegues a tiempo hoy.</p>
+    </div>
+
+    <div class="ejemplo">
+        <h3>&lt;i&gt; - Voz alternativa/cursiva</h3>
+        <p>El término <i>déjà vu</i> viene del francés.</p>
+    </div>
+
+    <div class="ejemplo">
+        <h3>&lt;mark&gt; - Texto resaltado</h3>
+        <p>En el examen, recuerda estudiar <mark>los capítulos 3 y 5</mark> especialmente.</p>
+    </div>
+
+    <div class="ejemplo">
+        <h3>&lt;small&gt; - Texto pequeño</h3>
+        <p>Precio: $100 <small>(impuestos incluidos)</small></p>
+    </div>
+
+    <div class="ejemplo">
+        <h3>&lt;del&gt; e &lt;ins&gt; - Eliminado e insertado</h3>
+        <p>Precio anterior: <del>$150</del> Precio nuevo: <ins>$120</ins></p>
+    </div>
+
+    <div class="ejemplo">
+        <h3>&lt;code&gt; - Código de programación</h3>
+        <p>Para imprimir en Python usa: <code>print("Hola mundo")</code></p>
+    </div>
+
+    <div class="ejemplo">
+        <h3>&lt;blockquote&gt; - Cita larga</h3>
+        <blockquote>
+            "La medida del éxito no es el dinero ni el poder, sino el respeto que inspiras en los demás."
+            <cite>— Albert Einstein</cite>
+        </blockquote>
+    </div>
+
+    <!-- PRIORIDAD MEDIA -->
+    <h2>🥈 Etiquetas de Prioridad Media (Contextos específicos)</h2>
+
+    <div class="ejemplo">
+        <h3>&lt;abbr&gt; - Abreviatura con tooltip</h3>
+        <p>La <abbr title="Organización de las Naciones Unidas">ONU</abbr> fue fundada en 1945.</p>
+    </div>
+
+    <div class="ejemplo">
+        <h3>&lt;cite&gt; - Título de obra</h3>
+        <p>Mi libro favorito es <cite>Cien años de soledad</cite> de Gabriel García Márquez.</p>
+    </div>
+
+    <div class="ejemplo">
+        <h3>&lt;q&gt; - Cita corta en línea</h3>
+        <p>Mi abuela siempre decía: <q>Más vale tarde que nunca</q>.</p>
+    </div>
+
+    <div class="ejemplo">
+        <h3>&lt;sub&gt; y &lt;sup&gt; - Subíndice y superíndice</h3>
+        <p>Fórmula del agua: H<sub>2</sub>O<br>
+        Teorema de Pitágoras: a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></p>
+    </div>
+
+    <div class="ejemplo">
+        <h3>&lt;kbd&gt; - Teclas del teclado</h3>
+        <p>Para guardar un documento presiona <kbd>Ctrl</kbd> + <kbd>S</kbd></p>
+    </div>
+
+    <div class="ejemplo">
+        <h3>&lt;pre&gt; - Texto preformateado</h3>
+        <pre>
+function saludar() {
+    console.log("Hola mundo");
+    return true;
+}
+        </pre>
+    </div>
+
+    <div class="ejemplo">
+        <h3>&lt;address&gt; - Información de contacto</h3>
+        <address>
+            Escrito por <a href="mailto:ejemplo@correo.com">Juan Pérez</a>.<br>
+            Visítanos en:<br>
+            Calle Principal 123<br>
+            Ciudad, País
+        </address>
+    </div>
+
+    <!-- PRIORIDAD BAJA -->
+    <h2>🥉 Etiquetas de Prioridad Baja (Uso muy específico)</h2>
+
+    <div class="ejemplo">
+        <h3>&lt;dfn&gt; - Término a definir</h3>
+        <p>Un <dfn>byte</dfn> es una unidad de información que consiste en 8 bits.</p>
+    </div>
+
+    <div class="ejemplo">
+        <h3>&lt;s&gt; - Texto incorrecto/obsoleto</h3>
+        <p>Precio: <s>$200</s> $150 (¡oferta especial!)</p>
+    </div>
+
+    <div class="ejemplo">
+        <h3>&lt;var&gt; - Variable en programación</h3>
+        <p>La variable <var>x</var> representa la coordenada horizontal.</p>
+    </div>
+
+    <div class="ejemplo">
+        <h3>&lt;meter&gt; - Medición escalar</h3>
+        <p>Uso de disco: <meter value="0.7" min="0" max="1">70%</meter> 70%</p>
+    </div>
+
+    <div class="ejemplo">
+        <h3>&lt;progress&gt; - Progreso de tarea</h3>
+        <p>Progreso de descarga: <progress value="75" max="100">75%</progress></p>
+    </div>
+
+    <div class="ejemplo">
+        <h3>&lt;time&gt; - Hora/fecha específica</h3>
+        <p>La reunión es el <time datetime="2024-01-15">15 de enero</time> a las <time datetime="14:30">2:30 PM</time>.</p>
+    </div>
+
+    <div class="ejemplo">
+        <h3>&lt;samp&gt; - Salida de programa</h3>
+        <p>Al ejecutar el programa verás: <samp>Error: archivo no encontrado</samp></p>
+    </div>
+
+    <div class="ejemplo">
+        <h3>&lt;bdi&gt; - Texto con dirección diferente</h3>
+        <p>Usuario: <bdi>إيان</bdi> - 15 comentarios</p>
+    </div>
+
+    <div class="ejemplo">
+        <h3>&lt;bdo&gt; - Anular dirección del texto</h3>
+        <p>Texto normal: izquierda a derecha<br>
+        <bdo dir="rtl">Texto de derecha a izquierda</bdo></p>
+    </div>
+
+    <div class="ejemplo">
+        <h3>&lt;wbr&gt; - Posible salto de línea</h3>
+        <p>URL larga: https://www.ejemplo<wbr>.com/una<wbr>/ruta<wbr>/muy<wbr>/larga<wbr>/en<wbr>/la<wbr>/web</p>
+    </div>
+
+    <!-- ETIQUETAS OBSOLETAS -->
+    <h2>🚫 Etiquetas Obsoletas (NO USAR)</h2>
+
+    <div class="ejemplo" style="border-left-color: #ff4444;">
+        <h3>&lt;center&gt; - Centrado (obsoleto)</h3>
+        <p style="text-align: center;">❌ NO USAR: &lt;center&gt;Texto centrado&lt;/center&gt;<br>
+        ✅ USAR CSS: <code>style="text-align: center;"</code></p>
+    </div>
+
+    <div class="ejemplo" style="border-left-color: #ff4444;">
+        <h3>&lt;font&gt; - Fuente (obsoleto)</h3>
+        <p style="color: red; font-size: 18px;">❌ NO USAR: &lt;font color="red" size="4"&gt;<br>
+        ✅ USAR CSS: <code>style="color: red; font-size: 18px;"</code></p>
+    </div>
+
+</body>
+</html>
