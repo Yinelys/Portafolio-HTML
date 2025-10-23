@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla compleja</title>
+</head>
+<body>
+    <h1>🎮 Mis Videojuegos por Plataforma</h1>
+
+    <table border="3">
+        <caption>Colección personal de videojuegos</caption>
+
+        <thead>
+            <tr>
+                <th>Plataforma</th>
+                <th>Género</th>
+                <th>Juego</th>
+                <th>Horas jugadas</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <!-- PlayStation -->
+            <tr>
+                <td rowspan="4">PlayStation</td>
+                <td>Acción</td>
+                <td>The Last of Us</td>
+                <td>50</td>
+                <td>Completado</td>
+            </tr>
+
+            <tr>
+                <td>Acción-Aventura</td>
+                <td>God of War</td>
+                <td>45</td>
+                <td>Completado</td>
+            </tr>
+
+            <tr>
+                <td>Disparo-Aventura</td>
+                <td>GTA</td>
+                <td>30</td>
+                <td>En progreso</td>
+            </tr>
+
+            <tr>
+                <td>Battle Royale</td>
+                <td>Fortnite</td>
+                <td>120</td>
+                <td>En progreso</td>
+            </tr>
+
+            <!-- PC -->
+             <tr>
+                <td rowspan="3">PC</td>
+                <td>MMORPG</td>
+                <td>World of Warcraft</td>
+                <td>200</td>
+                <td>Pausado</td>
+             </tr>
+
+             <tr>
+                <td>Estrategia</td>
+                <td>Age of Empires IV</td>
+                <td>80</td>
+                <td>Completado</td>
+             </tr>
+
+             <tr>
+                <td>Shooter</td>
+                <td>Call of Duty:War Zone</td>
+                <td>150</td>
+                <td>Jugando</td>
+             </tr>
+
+             <!-- PC -->
+              <tr>
+                <td rowspan="2">Nintendo Switch</td>
+                <td>Aventura</td>
+                <td>The Legend of Zelda: Breath of the Wild</td>
+                <td>60</td>
+                <td>Completado</td>
+              </tr>
+
+              <tr>
+                <td>Party</td>
+                <td>Mario Party 5</td>
+                <td>25</td>
+                <td>Casual</td>
+              </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Total de horas jugadas:</td>
+                <td>810</td>
+                <td>9 Juegos</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+    <br>
+    <hr>
+    
+    <table border="">
+        <caption>Animes por temporada usando <code>rowspan</code></caption>
+
+        <thead>
+            <tr>
+                <th>Temporada</th>
+                <th>Anime</th>
+                <th>Episodios</th>
+                <th>Idioma</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Primavera 1999 - Presente</td>
+                <td>One Piece</td>
+                <td>1000+</td>
+                <td rowspan="6">Japonés</td> 
+            </tr>
+
+            <tr>
+                <td>Febrero 2007 - Marzo 2017</td> 
+                <td>Naruto Shippuden</td>
+                <td>500</td>
+            </tr>
+
+            <tr>
+                <td>Octubre 2004 - Marzo 2012</td>
+                <td>Bleach</td>
+                <td>366</td>
+            </tr>
+
+            <tr>
+                <td>Abril 1989 - Enero 1996</td>
+                <td>Dragon Ball Z</td>
+                <td>291</td>
+            </tr>
+
+            <tr>
+                <td>Abril 2013 - Mayo 2023</td>
+                <td>Attack on Titan</td>
+                <td>75</td>
+            </tr>
+
+            <tr>
+                <td>Abril 2019 - Diciembre 2021</td>
+                <td>Demon Slayer</td>
+                <td>44</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>
