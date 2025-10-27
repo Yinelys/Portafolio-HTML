@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Login</title>
+</head>
+<body>
+    <h1>🔐 Iniciar Sesión</h1>
+
+    <form>
+        <label for="email-login">Correo electrónico:</label>
+        <input type="email" id="email-login" name="email" required placeholder="tu@email.com">
+        <br><br>
+
+        <label for="password-login">Contraseña:</label>
+        <input type="password" id="password-login" name="password" required placeholder="Mínimo 8 caracteres">
+        <br><br>
+
+        <!-- Checkbox para recordar usuario -->
+         <input type="checkbox" id="recordar" name="recordar" value="1">
+         <label for="recordar">Recordar mi usuario</label>
+         <br><br>
+
+        <button type="submit">
+            Iniciar Sesión
+        </button>
+
+        <!-- Enlace para recuperar contraseña -->
+        <p><a href="#olvide-contrasena">¿Olvidaste tu contraseña?</a></p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+</head>
+<body>
+    <h1>👤 Crear Cuenta</h1>
+
+    <form>
+        <fieldset>
+            <legend>Información Personal</legend>
+
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" name="usuario" required>
+            <br><br>
+
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+            <br><br>
+
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad" id="edad" min="13" max="100">
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>
+                Preferencias
+            </legend>
+
+            <label>Género favorito</label>
+            <select id="genero" name="genero">
+                <option value="" disabled selected>Selecione una opcion</option>
+                <option value="accion">Acción</option>
+                <option value="aventura">Aventura</option>
+                <option value="rpg">RPG</option>
+                <option value="estrategia">Estrategia</option>
+            </select>
+            <br><br>
+
+            <label>Plataformas que usas:</label>
+            <br>
+            <input type="checkbox" id="pc" name="plataforma" value="pc">
+            <label for="pc">PC</label>
+
+            <input type="checkbox" id="playstation" name="plataforma" value="playstation">
+            <label for="playstation">PlayStation</label>
+
+            <input type="checkbox" id="nintendo" name="plataforma" value="nintendo">
+            <label for="nintendo">Nintendo Switch</label>
+        </fieldset>
+        <br>
+        <button type="submit">Registrarse</button>
+        <button type="reset">Limpiar formulario</button>
+    </form>
+</body>
+</html>

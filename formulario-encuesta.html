@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de Preferencias</title>
+</head>
+<body>
+    <h1>📊 Encuesta de Gustos</h1>
+
+    <form>
+        <fieldset>
+            <legend>Información Demográfica</legend>
+
+            <label for="pais">País de residencia</label>
+            <select id="pais" name="pais" required>
+                <option value="" disabled selected>Selecciona tu país</option>
+                <option value="panama">Panamá</option>
+                <option value="mexico">México</option>
+                <option value="argentina">Argentina</option>
+                <option value="colombia">Colombia</option>
+                <option value="venezuela">Venezuela</option>
+                <option value="otro">Otro</option>
+            </select>
+            <br><br>
+
+            <label>Género:</label>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino">Masculino</label>
+
+            <input type="radio" id="femenino" name="genero" value="femenino">
+            <label for="femenino">Femenino</label>
+
+            <input type="radio" id="otro-genero" name="genero" value="otro">
+            <label for="otro-genero">Otro/prefiero no decir</label>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Preferencias de Entretenimiento</legend>
+
+            <label>¿Qué tipo de anime prefieres?</label>
+            <br>
+            <input type="radio" id="shonen" name="anime-preferido" value="shonen">
+            <label for="shonen">Shonen (Acción/Aventura)</label>
+            <br>
+
+            <input type="radio" id="shojo" name="anime-preferido" value="shojo">
+            <label for="shojo">Shojo (Romance/Drama)</label>
+            <br>
+
+            <input type="radio" id="seinen" name="anime-preferido" value="seinen">
+            <label for="seinen">Seinen (Adultos/Maduro)</label>
+            <br>
+
+            <input type="radio" id="josei" name="anime-preferido" value="josei">
+            <label for="josei">Josei (Historias realistas para mujeres)</label>
+            <br><br>
+
+            <label>Plataformas de streaming que usas:</label>
+            <br>
+            <input type="checkbox" id="netflix" name="streaming" value="netflix">
+            <label for="netflix">Netflix</label>
+            <br>
+
+            <input type="checkbox" id="crunchyroll" name="streaming" value="crunchyroll">
+            <label for="crunchyroll">Crunchyroll</label>
+            <br>
+
+            <input type="checkbox" id="primevideo" name="streaming" value="primevideo">
+            <label for="primevideo">Amazon Prime Video</label>
+            <br>
+
+            <input type="checkbox" id="disney" name="streaming" value="disney">
+            <label for="disney">Disney+</label>
+            <br>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Opinión Personal</legend>
+
+            <label for="sugerencias">¿Qué contenido te gustaría ver más?</label>
+            <textarea id="sugerencias" name="sugerencias" rows="3" placeholder="Tus sugerencias..."></textarea>
+            <br><br>
+
+            <label for="satisfaccion">Nivel de satisfacción con el contenido actual:</label>
+            <br>
+            <input type="range" id="satisfaccion" name="satisfaccion" min="1" max="5" value="3">
+            <span id="valor-satisfaccion">3</span>/5
+        </fieldset>
+        <br>
+
+        <button type="submit">Enviar Encuesta</button>
+        <button type="reset">Limpiar Encuesta</button>
+    </form>
+
+    <script>
+        // Mostrar valores de los ranges
+        document.getElementById('satisfaccion').addEventListener('input', function() {
+            document.getElementById('valor-satisfaccion').textContent = this.value;
+        });
+    </script>
+</body>
+</html>

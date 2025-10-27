@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Búsqueda</title>
+</head>
+<body>
+    <h1>🔍 Buscar Contenido</h1>
+
+    <form>
+        <fieldset>
+          <legend>
+            Búsqueda Básica
+          </legend>
+
+          <label for="busqueda">Término de búsqueda:</label>
+          <input type="search" id="busqueda" name="busqueda" placeholder="Buscar...">
+          <br><br>
+
+          <label for="categoria">Categoría:</label>
+          <input type="text" id="categoria" name="categoria" list="categorias">
+          <datalist id="categorias">
+            <option value="Anime">
+            <option value="Videojuegos">
+            <option value="Películas">
+            <option value="Series">
+            <option value="Música">
+           </datalist>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Filtros Avanzados</legend>
+
+            <label for="fecha">Fecha de lanzamientos:</label>
+            <input type="date" id="fecha" name="fecha">
+            <br><br>
+
+            <label for="rating">Rating mínimo:</label>
+            <input type="range" id="rating" name="rating" min="1" max="10" value="5">
+            <span id="valor-rating">5</span>/10
+            <br><br>
+
+            <label for="color">Color de etiqueta:</label>
+            <input type="color" id="color" name="color" value="#3498db">
+        </fieldset>
+        <br>
+        <button type="submit">Buscar</button>
+        <button type="reset">Limpiar filtros</button>
+    </form>
+    
+       <script>
+        // Script simple para mostrar el valor del range
+        document.getElementById('rating').addEventListener('input', function() {
+            document.getElementById('valor-rating').textContent = this.value;
+        });
+    </script>
+</body>
+</html>
